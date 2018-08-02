@@ -1,0 +1,11 @@
+{
+  "name": "StarRemover",
+  "description": "Remove Stars in Amazon",
+  "version": "1.0",
+  "manifest_version": 2,
+  "content_scripts": [{
+    "matches": ["https://www.amazon.co.jp/*"],
+    "js": ["starremover.js"]
+  }],
+  "permissions": ["tabs", "<all_urls>"]
+}
